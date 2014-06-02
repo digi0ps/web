@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> rps change log - digi0ps </title>
+<script>
+function intMain(d,s)
+{
+function lg(c){
+var x=d.createElement("div");
+x.setAttribute("class", "logcontainer");
+
+var y=d.createElement("p");
+y.setAttribute("class", "content");
+y.appendChild(document.createTextNode("-> "+c));
+x.appendChild(y);
+
+var f=document.getElementById("log").firstChild;
+s.insertBefore(x,f);
+}
+lg("Idea sparked in my mind while learning in codeacademy.");
+lg("website coding started.");
+lg("index.html created with skeleton elements.");
+lg("rps.js created for containing required javascript code.");
+lg("rps.js linked via script source.");
+lg("usr choice prompted and stored.");
+lg("computer choice calculated using 'random 3 Number selection' algorithm created by me. ;)");
+lg("user and computer choice has been outputted on website.");
+lg("choices compared with battle function.");
+lg("results calculated and winner outputted on html page.");
+
+} 
+</script>
+</head>
+<body onload="intMain(document, document.getElementById('log'));">
+<header> <h3> rps change log - build 1 -- digi0ps </h3> </header>
+<section id="log">
+<div class="logcontainer"><p class="content">-> Log Started</p></div>
+</section>
+</html>
